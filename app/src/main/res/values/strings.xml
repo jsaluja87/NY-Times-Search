@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NYTimesSearch</string>
+    <string name="ETQueryHint">Enter Search Query</string>
+    <string name="SearchButtonText">Search</string>
+    <string name="FilterDateText">Begin Date</string>
+    <string name="FilterSortText">Sort Order</string>
+    <string name="CheckBoxArtText">Arts</string>
+    <string name="CheckBoxStyleText">Fashion &amp; Style</string>
+    <string name="CheckBoxSportText">Sports</string>
+    <string name="FilterSaveButtonText">Save</string>
+    <string-array name="FilterNewSortArray">
+        <item>oldest</item>
+        <item>newest</item>
+    </string-array>
+    <string name="FilterNewDeskText">News Desk Values</string>
+    <string name="SplashScreenTitle">NY Times Search</string>
+
+    <string name="MenuSearchHint">Search…</string>
+    <string name="MenuFilterTitle">Filter</string>
+
+
+
+</resources>

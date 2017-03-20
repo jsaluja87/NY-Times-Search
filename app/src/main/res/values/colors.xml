@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#418377</color>
+    <color name="colorPrimaryDark">#518f76</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="SpashBgGradientStartColor">#ecd6f4</color>
+    <color name="SpashBgGradientCenterColor">#a1daf6</color>
+    <color name="SpashBgGradientEndColor">#53a2f9</color>
+
+    <color name="FilterFragmentTheme">#34cec6</color>
+</resources>

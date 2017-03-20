@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_screen_text">35sp</dimen>
+
+    <dimen name="article_item_padding">10dp</dimen>
+    <dimen name="article_item_image_height">100dp</dimen>
+    <dimen name="article_item_head_line_size">18sp</dimen>
+    <dimen name="article_item_text_size">12sp</dimen>
+
+    <dimen name="article_item__no_thumb_text_pad">10dp</dimen>
+
+    <dimen name="filter_fragment_spinner_width">200dp</dimen>
+    <dimen name="filter_fragment_datepicker_text_padding_top">8dp</dimen>
+
+</resources>

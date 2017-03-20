@@ -1,0 +1,106 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/FilterscrollViewId">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.codepath.nytimessearch.FilterFragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FilterActNewsDeskTextId"
+                android:textStyle="bold"
+                android:textColor="@color/FilterFragmentTheme"
+                android:text="@string/FilterNewDeskText"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"/>
+
+            <CheckBox
+                android:id="@+id/FilterActArtcheckBoxId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/FilterFragmentTheme"
+                android:text="@string/CheckBoxArtText"
+                android:layout_below="@+id/FilterActNewsDeskTextId"
+                android:layout_alignStart="@+id/FilterActNewsDeskTextId"/>
+
+            <CheckBox
+                android:id="@+id/FilterActStylecheckBoxId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/FilterFragmentTheme"
+                android:text="@string/CheckBoxStyleText"
+                android:layout_below="@+id/FilterActArtcheckBoxId"
+                android:layout_alignStart="@+id/FilterActNewsDeskTextId"/>
+
+            <CheckBox
+                android:id="@+id/FilterActSportscheckBoxId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/FilterFragmentTheme"
+                android:layout_below="@+id/FilterActStylecheckBoxId"
+                android:text="@string/CheckBoxSportText"
+                android:layout_alignStart="@+id/FilterActNewsDeskTextId"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FilterActSortTextId"
+                android:textStyle="bold"
+                android:textColor="@color/FilterFragmentTheme"
+                android:text="@string/FilterSortText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/FilterActSportscheckBoxId"/>
+
+            <Spinner
+                android:id="@+id/FilterActSpinnerId"
+                android:layout_width="@dimen/filter_fragment_spinner_width"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:entries="@array/FilterNewSortArray"
+                android:layout_below="@+id/FilterActSortTextId"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FilterActDateTextId"
+                android:textStyle="bold"
+                android:textColor="@color/FilterFragmentTheme"
+                android:paddingTop="@dimen/filter_fragment_datepicker_text_padding_top"
+                android:text="@string/FilterDateText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/FilterActSpinnerId"/>
+
+            <DatePicker
+                android:id="@+id/FilterActDateId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_below="@+id/FilterActDateTextId"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/FilterButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/FilterFragmentTheme"
+                android:textColor="@color/colorWhite"
+                android:text="@string/FilterSaveButtonText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/FilterActDateId"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
